@@ -1,8 +1,8 @@
 # Caption Disclosure Guide v1
 
 작성일: 2026-05-07
-Gate: Creative-Studio-7
-상태: caption and disclosure production guideline, no asset generation
+Gate: Creative-Studio-8
+상태: caption and disclosure guideline aligned with narration scripts, no asset generation
 용도: executive 5min / planner 90s 영상의 가상 presenter 고지, dummy data 고지, caption tone 기준
 
 ## Boundary
@@ -42,11 +42,11 @@ Gate: Creative-Studio-7
 
 `Sanitized mock visual`
 
-### No Performance Guarantee
+### No Performance Promise
 
 기본 고지:
 
-`예측은 성과 보장이 아니라 다음 판단을 위한 가설입니다.`
+`예측은 성과 약속이 아니라 다음 판단을 위한 가설입니다.`
 
 짧은 caption:
 
@@ -68,7 +68,7 @@ Gate: Creative-Studio-7
 - Presenter가 처음 크게 등장하는 scene에는 짧은 caption `AI-generated virtual presenter`를 함께 둘 수 있다.
 - 외부 공개 또는 짧은 social cutdown은 시작부와 description 양쪽에 고지를 둔다.
 - Dummy visual/data 고지는 mock UI 또는 diagram이 실제 화면처럼 보일 위험이 있는 scene에 사용한다.
-- No performance guarantee 고지는 Foresight scene 또는 성과/ROI frame에서 사용한다.
+- No performance promise 고지는 Foresight scene 또는 성과/ROI frame에서 사용한다.
 - Human approval 고지는 Sentinel, Agent Core, governance scene에서 사용한다.
 
 ## Korean Caption Tone
@@ -110,7 +110,7 @@ Gate: Creative-Studio-7
 ### Foresight
 
 - `Foresight: 예측 가설`
-- `성과 보장이 아닌 가설`
+- `성과 약속이 아닌 가설`
 - `다음 판단을 위한 관점`
 
 ### Agent Core
@@ -145,7 +145,7 @@ Gate: Creative-Studio-7
 | Compass source mock | Dummy visual/data disclosure if UI-like | `정책/가이드 근거 확인` |
 | Sentinel checklist/signal | Human approval caption | `운영 이상 신호 확인` |
 | Lens proof tile | Dummy visual/data disclosure | `비식별 기준으로 기록` |
-| Foresight trend/hypothesis | No performance guarantee caption | `Hypothesis, not guarantee` |
+| Foresight trend/hypothesis | No performance promise caption | `Hypothesis, not guarantee` |
 | Agent Core diagram | Human approval or governance caption | `권한과 감사 로그 기반` |
 | Closing | Virtual presenter disclosure if not shown at opening | `Planner judgment stays central` |
 
@@ -153,7 +153,7 @@ Gate: Creative-Studio-7
 
 - [ ] 가상 presenter 고지가 시작 또는 종료에 있다.
 - [ ] Mock visual/data 고지가 실제 화면처럼 보이는 scene에 있다.
-- [ ] Foresight와 ROI 관련 scene에 성과 보장 아님 기준이 있다.
+- [ ] Foresight와 ROI 관련 scene에 성과 약속 아님 기준이 있다.
 - [ ] Sentinel과 Agent Core scene에 사람 승인 기준이 있다.
 - [ ] Caption이 실제 광고주, 캠페인, 계정, 성과 수치를 포함하지 않는다.
 - [ ] Caption이 실제 직원, 고객, 광고주 담당자처럼 보이는 역할을 만들지 않는다.
