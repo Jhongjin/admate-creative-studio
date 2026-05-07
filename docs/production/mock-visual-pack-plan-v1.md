@@ -1,7 +1,7 @@
 # Mock Visual Pack Plan v1
 
 작성일: 2026-05-07
-상태: Gate Creative-Studio-5 draft
+상태: Gate Creative-Studio-7 aligned
 용도: 실제 내부 데이터 노출 없이 executive 5min / planner 90s 영상에 사용할 mock visual 유형 정의
 
 ## Production Boundary
@@ -11,6 +11,16 @@
 - 실제 성과 수치, 계정 ID, 내부 URL, API key, token, 개인 정보, 광고주명을 사용하지 않는다.
 - 모든 화면은 abstract card, diagram, dummy table, sanitized mock으로만 구성한다.
 - `AI Influencer/` PNG와 기타 이미지/영상/음성 asset은 stage 또는 commit 대상에 포함하지 않는다.
+- Scene-level production input은 `docs/production/scene-level-dummy-visual-spec-v1.md`를 기준으로 작성한다.
+- Caption과 disclosure는 `docs/production/caption-disclosure-guide-v1.md`를 기준으로 작성한다.
+
+## Product Handoff Standard
+
+- Compass: 정책/가이드 근거 확인의 출발점을 정리한다.
+- Sentinel: 세팅 검수와 운영 이상 감지 신호를 정리한다.
+- Lens: 캡처와 증빙을 비식별 기준으로 정리한다.
+- Foresight: 성과를 약속하지 않고 다음 판단을 위한 예측 가설과 분석 관점을 제안한다.
+- Agent Core: 네 Agent를 권한, 승인, 감사 로그, 학습 후보 기준으로 연결한다.
 
 ## Safe Dummy Data Standard
 
@@ -32,8 +42,8 @@
 | MVP-02 | Product cards | 4개 제품 역할 설명 | 제품명, one-liner, icon-style card | 실제 product screenshot, 실제 계정 데이터 |
 | MVP-03 | Campaign lifecycle loop | 기획부터 학습까지 loop 설명 | `Plan -> Check -> Review -> Monitor -> Capture -> Analyze -> Learn` | 실제 campaign status, 실제 일정 |
 | MVP-04 | Agent Core diagram | Openclaw/Hermes 역할 설명 | execution, memory, approval, audit log role card | API key, token, DB schema, internal logs |
-| MVP-05 | Policy source card mock | 정책 확인 출발점 설명 | `Policy Source`, `Allowed`, `Needs Review`, dummy text | 실제 매체 정책 전문, 고객 계약 조건 |
-| MVP-06 | Validation result mock | Sentinel 사전 검수/운영 감지 설명 | `Pass`, `Needs review`, `Missing item`, sample checklist | 실제 오류 로그, 실제 캠페인 설정 |
+| MVP-05 | Policy/guide source card mock | Compass 정책/가이드 근거 확인 출발점 설명 | `Guide Source`, `Allowed`, `Needs Review`, dummy text | 실제 매체 정책 전문, 고객 계약 조건 |
+| MVP-06 | Setup validation/anomaly signal mock | Sentinel 세팅 검수/운영 이상 감지 설명 | `Pass`, `Needs review`, `Missing item`, `Signal`, sample checklist | 실제 오류 로그, 실제 캠페인 설정 |
 | MVP-07 | Capture proof mock | Lens 캡처/증빙 설명 | dummy capture tile, `What was checked`, `Why it matters` | 실제 화면 캡처, 계정 ID, 광고주명 |
 | MVP-08 | Benchmark/report mock | Foresight 예측/분석 설명 | trend shape, hypothesis note, rounded mock score | 실제 성과 수치, 실제 benchmark source |
 | MVP-09 | Intelligence Library knowledge card mock | 운영 지식 자산화 설명 | approved message, review criteria, source status | 실제 내부 노하우, 고객명, 비공개 문서 |
@@ -48,8 +58,8 @@
 | E2 | "왜 지금 AdMate인가" | MVP-03 simplified loop | scattered task cards becoming a loop | Dummy labels only |
 | E3 | 반복 업무와 판단 분산 | MVP-03 + MVP-09 | task stack and knowledge card contrast | No real team names |
 | E4 | AdMate 정의 | MVP-01 | ecosystem diagram with 4 products and Agent Core | No internal architecture detail |
-| E5 | Compass | MVP-02 + MVP-05 | Compass card linked to policy source card | No real brief |
-| E6 | Sentinel | MVP-02 + MVP-06 | Sentinel card with validation checklist | No real validation logs |
+| E5 | Compass | MVP-02 + MVP-05 | Compass card linked to policy/guide source card | No real brief or policy full text |
+| E6 | Sentinel | MVP-02 + MVP-06 | Sentinel card with setup validation checklist and anomaly signal | No real validation or alert logs |
 | E7 | Lens | MVP-02 + MVP-07 | Lens card with sanitized proof tiles | No screenshots |
 | E8 | Foresight | MVP-02 + MVP-08 | hypothesis card with no real numbers | No performance guarantee |
 | E9 | Agent Core | MVP-04 | Agent Core center, Openclaw execution, Hermes memory | No DB/API/log details |
@@ -67,8 +77,8 @@
 | P1 | 반복 확인 현실 | MVP-03 | task stack cards | No real task board |
 | P2 | 반복 label 정렬 | MVP-03 | cards align into flow | Dummy labels only |
 | P3 | AdMate 소개 | MVP-01 | AdMate work partner card | No "planner replacement" cue |
-| P4 | Compass / 정책 확인 | MVP-05 | policy starting point card | No real policy/legal text |
-| P5 | Sentinel / 사전 검수, 운영 감지 | MVP-06 | checklist and signal icon | No real alert logs |
+| P4 | Compass / 정책-가이드 근거 확인 | MVP-05 | policy/guide source starting point card | No real policy/legal text |
+| P5 | Sentinel / 세팅 검수, 운영 이상 감지 | MVP-06 | setup checklist and anomaly signal icon | No real alert logs |
 | P6 | Lens / 캡처, 증빙 | MVP-07 | capture proof tile with dummy note | No real UI capture |
 | P7 | Foresight / 예측, 분석 | MVP-08 | hypothesis and trend shape | No real performance number |
 | P8 | Agent Core / 판단 축적 | MVP-09 | judgment becomes criteria loop | Learning candidate, not auto-training |

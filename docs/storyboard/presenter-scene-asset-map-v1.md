@@ -1,7 +1,7 @@
 # Presenter Scene Asset Map v1
 
 작성일: 2026-05-07
-상태: Gate Creative-Studio-4 draft
+상태: Gate Creative-Studio-7 aligned
 용도: executive 5min / planner 90s 영상 scene별 presenter asset reference mapping
 
 ## Mapping Rules
@@ -10,6 +10,7 @@
 - `usage type`은 `still`, `reference`, `presenter shot`, `voice-over only`, `background avoid` 중 하나 이상으로 표기한다.
 - 실제 제작 전에는 `video-production-safety-checklist-v1.md`와 `presenter-usage-boundary-v1.md`를 함께 확인한다.
 - Presenter가 실제 직원 또는 실제 플래너처럼 보이지 않도록 모든 영상에 가상 presenter 고지를 넣는다.
+- Product/Core 설명 장면은 diagram, product card, sanitized mock을 주 화면으로 사용하고 presenter는 voice-over 중심으로 제한한다.
 
 ## Asset Legend
 
@@ -30,9 +31,9 @@
 | E1 | 0:00-0:05 Opening disclosure | none | voice-over only, background avoid | Minimal title card; presenter can be absent while disclosure appears |
 | E2 | 0:05-0:15 "왜 지금 AdMate인가" | `lua_brand_safe_profile_v1_ivory_shirt.png` | still, presenter shot reference | Short appearance only; do not imply actual executive/employee |
 | E3 | 0:15-0:45 반복 업무와 판단 분산 | `lua_brand_safe_profile_v1_ivory_shirt.png` | presenter shot reference | Generic studio background only; no internal screens |
-| E4 | 0:45-1:05 AdMate 정의 | `lua_master_face_v1.png` | reference | Face consistency check; product definition uses diagram as primary visual |
-| E5 | 1:05-1:22 Compass | none | voice-over only | Product card and brief-to-path diagram should lead |
-| E6 | 1:22-1:40 Sentinel | none | voice-over only | Use policy/setup checklist cards, not presenter closeup |
+| E4 | 0:45-1:05 AdMate 정의 | `lua_master_face_v1.png` | reference, voice-over only | Face consistency check only; product definition uses diagram as primary visual |
+| E5 | 1:05-1:22 Compass | none | voice-over only | Product card and policy/guide source diagram should lead |
+| E6 | 1:22-1:40 Sentinel | none | voice-over only | Use setup validation and anomaly signal cards, not presenter closeup |
 | E7 | 1:40-1:57 Lens | none | voice-over only, background avoid | No real capture/UI screenshot |
 | E8 | 1:57-2:15 Foresight | none | voice-over only | No performance numbers; no guarantee cue |
 | E9 | 2:15-2:55 Agent Core / Openclaw / Hermes | none | voice-over only | Technical diagram only; no internal DB/API/key/log screenshots |
@@ -50,11 +51,11 @@
 | P1 | 0:00-0:05 반복 확인 현실 | none | voice-over only | Task stack cards; no internal task board |
 | P2 | 0:05-0:08 반복 label 정렬 | none | voice-over only | Dummy labels only |
 | P3 | 0:08-0:18 AdMate 한 문장 소개 | `lua_video_01_scene_01_window_closeup.png` | reference, presenter shot | Friendly guide tone; include virtual presenter disclosure nearby |
-| P4 | 0:18-0:31 Compass / 정책 확인 출발점 | `lua_brand_safe_profile_v1_ivory_shirt.png` | reference, limited presenter shot | Do not show real campaign brief |
-| P5 | 0:31-0:46 Sentinel / 사전 검수, 운영 감지 | none | voice-over only | Product card and checklist visual lead |
+| P4 | 0:18-0:31 Compass / 정책-가이드 근거 확인 출발점 | `lua_brand_safe_profile_v1_ivory_shirt.png` | reference, limited presenter shot | Do not show real campaign brief or policy full text |
+| P5 | 0:31-0:46 Sentinel / 세팅 검수, 운영 이상 감지 | none | voice-over only | Product card and checklist visual lead |
 | P6 | 0:46-0:58 Lens / 캡처, 증빙 | none | voice-over only, background avoid | No real capture or account UI |
 | P7 | 0:58-1:12 Foresight / 예측, 분석 | none | voice-over only | No performance numbers or guaranteed outcome |
-| P8 | 1:12-1:24 Agent Core / 판단 축적 | `lua_side_profile_left_v1_window_blouse_alt.png` | reference only, optional side shot | Optional only; check background and identity consistency |
+| P8 | 1:12-1:24 Agent Core / 판단 축적 | `lua_side_profile_left_v1_window_blouse_alt.png` | reference only, optional side reference | Optional reference only; loop diagram remains primary visual |
 | P9 | 1:24-1:30 Closing | `lua_video_01_scene_04_soft_smile.png` | reference, presenter shot | Soft smile allowed; avoid coworker/testimonial feel |
 
 ## Background Avoid Map

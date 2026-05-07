@@ -1,7 +1,7 @@
 # Executive 5min Scene Shotlist v1
 
 작성일: 2026-05-07
-상태: Gate Creative-Studio-2 draft
+상태: Gate Creative-Studio-7 aligned
 용도: 임원 보고용 5분 영상의 scene outline, visual cue, presenter cue, safety cue
 
 ## Production Boundary
@@ -19,6 +19,8 @@
 - 의상: ivory shirt/blouse 중심
 - 배경: generic studio, abstract office, 비식별 mock background
 - 표정: neutral confidence, closing에서만 soft smile
+- 등장 범위: opening, problem transition, knowledge asset transition, roadmap transition, closing으로 제한
+- product/Core 설명 장면: presenter 얼굴보다 product card, diagram, sanitized mock 중심
 - 금지: mirror selfie, lipstick/beauty product, 실제 거리 표지, 내부 사무실 화면
 
 ## Scene Shotlist
@@ -28,17 +30,17 @@
 | 1 | 0:00-0:05 | 가상 presenter 고지 | Minimal title card, AdMate Creative Studio Agent | Presenter 미등장 또는 small profile still | `AI-generated virtual presenter` | 시작 5초 내 고지 |
 | 2 | 0:05-0:15 | "왜 지금 AdMate인가" 질문 | Dark-on-light title, thin line animation | 정면 closeup 전환 준비 | `Why AdMate, now?` | 실제 회사 로고 외 내부자료 없음 |
 | 3 | 0:15-0:45 | 반복 업무와 판단 분산 문제 | Abstract operation cards: brief, policy, review, capture, analysis | 차분한 정면 eye contact | `Repetitive work + scattered judgment` | dummy text만 사용 |
-| 4 | 0:45-1:05 | AdMate 정의 | Platform map: AI Agent-based ad operations | 3/4 closeup, 낮은 속도 | `AI Agent-based ad operations platform` | 완전 자동화 표현 금지 |
-| 5 | 1:05-1:22 | Compass 소개 | Compass card, brief-to-path diagram | Presenter가 오른쪽에서 설명, 손짓 최소 | `Compass: planning guide` | 실제 캠페인 brief 금지 |
-| 6 | 1:22-1:40 | Sentinel 소개 | Sentinel card, policy and setup checklist | 표정 단정, 강조는 짧게 | `Sentinel: policy and setup safety` | 세팅 사고 "완전 방지" 표현 금지 |
-| 7 | 1:40-1:57 | Lens 소개 | Lens card, sanitized capture/evidence tiles | 카메라 정면, 속도 유지 | `Lens: capture with context` | 실제 UI capture 금지 |
-| 8 | 1:57-2:15 | Foresight 소개 | Foresight card, hypothesis and learning loop | 부드러운 전환, 과장 없음 | `Foresight: hypothesis, not guarantee` | 성과 보장 표현 금지 |
-| 9 | 2:15-2:55 | Agent Core, Openclaw, Hermes | Core diagram: Agent Core center, Openclaw execution, Hermes memory | Presenter 좌측, diagram 우측 | `Agent Core: execution + memory` | 내부 아키텍처 세부/키/DB 노출 금지 |
-| 10 | 2:55-3:35 | 운영 loop | Horizontal loop: 기획 -> 정책 확인 -> 세팅 검수 -> 운영 모니터링 -> 캡처/증빙 -> 성과 분석 -> 학습 | Presenter voice only 또는 small picture-in-picture | `Plan -> Check -> Review -> Monitor -> Capture -> Analyze -> Learn` | 실제 숫자/계정명 없음 |
+| 4 | 0:45-1:05 | AdMate 정의 | Platform map: AI Agent-based ad operations | Voice-over 중심, face consistency reference only | `AI Agent-based ad operations platform` | 완전 자동 운영 표현 금지 |
+| 5 | 1:05-1:22 | Compass: 정책/가이드 근거 확인 | Compass card, guide source path, policy source mock | Voice-over only | `Compass: guide source check` | 실제 캠페인 brief, 실제 정책 전문 금지 |
+| 6 | 1:22-1:40 | Sentinel: 세팅 검수와 운영 이상 감지 | Sentinel card, setup validation checklist, anomaly signal icon | Voice-over only | `Sentinel: setup + anomaly signal` | 세팅 사고 "완전 방지", 승인 없는 차단/집행 표현 금지 |
+| 7 | 1:40-1:57 | Lens 소개 | Lens card, sanitized capture/evidence tiles | Voice-over only | `Lens: capture with context` | 실제 UI capture 금지 |
+| 8 | 1:57-2:15 | Foresight 소개 | Foresight card, hypothesis and learning loop | Voice-over only | `Foresight: hypothesis, not guarantee` | 성과 보장 표현 금지 |
+| 9 | 2:15-2:55 | Agent Core, Openclaw, Hermes | Core diagram: Agent Core center, Openclaw execution, Hermes memory | Voice-over only | `Agent Core: execution + memory` | 내부 아키텍처 세부/키/DB 노출 금지 |
+| 10 | 2:55-3:35 | 운영 loop | Horizontal loop: 기획 -> 정책/가이드 근거 확인 -> 세팅 검수 -> 운영 이상 감지 -> 캡처/증빙 -> 성과 분석 -> 학습 | Voice-over only | `Plan -> Check -> Validate -> Monitor -> Capture -> Analyze -> Learn` | 실제 숫자/계정명 없음 |
 | 11 | 3:35-3:55 | 운영 지식 자산화 | Knowledge card stack, approved criteria library | 정면 closeup 재등장 | `Operational knowledge becomes an asset` | 실제 노하우/고객명 금지 |
-| 12 | 3:55-4:10 | 반복 업무 절감 | Before/after workflow density, no numbers | 안정적인 설명, 빠른 pitch 금지 | `Less repetition, better judgment` | 절감 수치 사용 금지 |
-| 13 | 4:10-4:25 | 승인/감사 로그/ROI | Governance row: permission, approval, audit log, ROI frame | 고개 끄덕임 정도의 절제된 cue | `Permission + approval + audit log` | ISMS/권한은 원칙으로만 표현 |
-| 14 | 4:25-4:50 | Roadmap | Three cards: Intelligence Library, Report personalization, Creative Studio | Presenter가 roadmap을 차분히 안내 | `Library -> Personalization -> Creative Studio` | 실제 일정/예산/owner 없음 |
+| 12 | 3:55-4:10 | 반복 업무 절감 | Before/after workflow density, no numbers | Voice-over only | `Less repetition, better judgment` | 절감 수치 사용 금지 |
+| 13 | 4:10-4:25 | 승인/감사 로그/ROI | Governance row: permission, approval, audit log, ROI frame | Voice-over only | `Permission + approval + audit log` | ISMS/권한은 원칙으로만 표현 |
+| 14 | 4:25-4:50 | Roadmap | Three cards: Intelligence Library, Report personalization, Creative Studio | 제한적 presenter transition 가능, roadmap cards가 주 화면 | `Library -> Personalization -> Creative Studio` | 실제 일정/예산/owner 없음 |
 | 15 | 4:50-5:00 | Closing | Presenter closeup, soft smile, final title | Soft smile, 짧은 pause | `Planner judgment stays central` | 실제 직원 오인 방지 고지 재표기 |
 
 ## Visual System
@@ -61,9 +63,9 @@
 
 | Cue | 사용 위치 | 기준 |
 |---|---|---|
-| Neutral eye contact | Opening, definition, company competitiveness | 신뢰감 중심 |
-| Slight 3/4 angle | Product explanation | 제품 카드와 균형 |
-| Voice-only with diagram | Operating loop | 정보량이 많은 구간에서 얼굴 과노출 방지 |
+| Neutral eye contact | Scene 2-3, Scene 11 | 신뢰감 중심, 짧게 사용 |
+| Limited transition shot | Scene 14 | roadmap cards가 주 화면이고 presenter는 연결 역할만 수행 |
+| Voice-only with diagram | Scene 4-10, Scene 12-13 | product/Core 정보량이 많은 구간에서 얼굴 과노출 방지 |
 | Soft smile | Closing | 과한 홍보 톤 없이 마무리 |
 
 ## Shot Safety Checklist

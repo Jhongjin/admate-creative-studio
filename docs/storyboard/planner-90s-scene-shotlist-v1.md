@@ -1,7 +1,7 @@
 # Planner 90s Scene Shotlist v1
 
 작성일: 2026-05-07
-상태: Gate Creative-Studio-3 draft
+상태: Gate Creative-Studio-7 aligned
 용도: 미디어플래너 대상 90초 소개 영상의 scene outline, visual cue, presenter cue, safety cue
 
 ## Production Boundary
@@ -26,11 +26,11 @@
 | 1 | 0:00-0:05 | 캠페인 운영에서 반복 확인이 쌓이는 현실 제시 | Abstract task stack: policy, setup, capture, analysis | Presenter는 미등장 또는 small profile | `Too many repeat checks` | 실제 업무 화면 금지 |
 | 2 | 0:05-0:08 | 정책, 세팅, 캡처, 결과 정리의 반복 언급 | Task cards가 빠르게 쌓이다가 정렬됨 | Voice only | `Policy / Setup / Capture / Analysis` | dummy label만 사용 |
 | 3 | 0:08-0:18 | AdMate 한 문장 소개 | AdMate card가 task stack을 하나의 flow로 정리 | 정면 closeup, calm guide tone | `AI work partner for ad operations` | 플래너 대체 표현 금지 |
-| 4 | 0:18-0:31 | Compass가 정책 확인의 출발점 정리 | Compass card, brief 조건에서 policy checklist로 연결 | 3/4 angle, 손짓 최소 | `Compass: policy starting point` | 실제 campaign brief 금지 |
-| 5 | 0:31-0:46 | Sentinel이 사전 검수와 운영 감지 지원 | Sentinel card, pre-check list와 monitoring signal icon | 단정한 eye contact | `Sentinel: pre-check + monitoring` | 승인 없는 차단/집행 표현 금지 |
-| 6 | 0:46-0:58 | Lens가 캡처와 증빙을 보고 가능한 흐름으로 정리 | Sanitized capture tiles, evidence note card | Presenter voice over diagram | `Lens: capture with context` | 실제 내부 화면/계정 정보 금지 |
+| 4 | 0:18-0:31 | Compass가 정책/가이드 근거 확인의 출발점을 정리 | Compass card, brief 조건에서 guide source card로 연결 | 제한적 guide shot 가능, product card가 주 화면 | `Compass: guide source check` | 실제 campaign brief, 실제 정책 전문 금지 |
+| 5 | 0:31-0:46 | Sentinel이 세팅 검수와 운영 이상 감지 지원 | Sentinel card, setup validation list와 anomaly signal icon | Voice-over only | `Sentinel: setup + anomaly signal` | 승인 없는 차단/집행 표현 금지 |
+| 6 | 0:46-0:58 | Lens가 캡처와 증빙을 보고 가능한 흐름으로 정리 | Sanitized capture tiles, evidence note card | Voice-over only | `Lens: capture with context` | 실제 내부 화면/계정 정보 금지 |
 | 7 | 0:58-1:12 | Foresight가 예측/분석 가설 지원 | Foresight card, trend line without numbers, hypothesis note | 차분한 설명, 과장 금지 | `Foresight: hypothesis, not guarantee` | 성과 보장/실제 수치 금지 |
-| 8 | 1:12-1:24 | Agent Core가 판단을 다음 기준으로 축적 | Learning loop: judgment -> criteria -> next brief | Presenter small PIP + loop diagram | `Judgment becomes next criteria` | 사람 승인 없는 학습 표현 금지 |
+| 8 | 1:12-1:24 | Agent Core가 판단을 다음 기준으로 축적 | Learning loop: judgment -> criteria -> next brief | Voice-over only, optional side reference only | `Judgment becomes next criteria` | 사람 승인 없는 학습 표현 금지 |
 | 9 | 1:24-1:30 | 반복 확인은 줄이고 전략과 판단에 집중 | Presenter closeup, soft smile, final title | Soft smile, 짧은 pause | `More time for strategy and judgment` | 가상 presenter 고지 재확인 |
 
 ## Scene Detail
@@ -49,12 +49,12 @@
 
 ### Scene 4: Compass
 
-- 사용자가 지정한 정책 확인 scene이므로, Compass는 브리프와 운영 조건에서 정책 확인 출발점을 잡는 역할로 표현한다.
+- Compass는 브리프와 운영 조건에서 정책/가이드 근거 확인의 출발점을 잡는 역할로 표현한다.
 - Compass가 전략을 자동 확정하거나 캠페인을 대신 기획한다고 말하지 않는다.
 
 ### Scene 5: Sentinel
 
-- Sentinel은 사전 검수와 운영 감지의 연결을 보여준다.
+- Sentinel은 세팅 검수와 운영 이상 감지의 연결을 보여준다.
 - "모든 사고를 막는다"가 아니라 "미리 확인할 신호를 정리한다"로 말한다.
 - 최종 판단과 승인은 사람이 한다는 cue를 narration 또는 safety note에 남긴다.
 
@@ -87,7 +87,8 @@
 | Cue | 사용 위치 | 기준 |
 |---|---|---|
 | Friendly neutral | Scene 3 | 친근하지만 influencer tone 금지 |
-| Practical guide | Scene 4-6 | 업무 흐름을 설명하는 톤 |
+| Practical guide | Scene 4 | Compass handoff를 짧게 안내하고 product card가 주 화면 |
+| Voice-only product guide | Scene 5-8 | Sentinel, Lens, Foresight, Agent Core 정보가 주 화면 |
 | Calm caution | Scene 5, 7, 8 | 승인, 가설, 학습 경계 강조 |
 | Soft close | Scene 9 | 과장 없는 마무리 |
 
