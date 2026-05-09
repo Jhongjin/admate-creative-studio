@@ -1,7 +1,8 @@
 # Scene-level Dummy Visual Spec v1
 
 작성일: 2026-05-07
-Gate: Creative-Studio-7
+정렬일: 2026-05-09
+Gate: Creative-Studio-8
 상태: production input spec, no asset generation
 용도: executive 5min / planner 90s 영상의 scene별 mock visual 입력 기준
 
@@ -12,6 +13,7 @@ Gate: Creative-Studio-7
 - 실제 Slack, Supabase, Vercel, 내부 dashboard, DB/API/log, 광고주/캠페인/계정 화면을 사용하지 않는다.
 - 실제 광고주명, 캠페인명, 계정 ID, 성과 수치, 예산, 계약 조건, 개인 정보, 내부 URL을 사용하지 않는다.
 - `AI Influencer/` PNG는 파일명 reference로만 다루며 열람, 수정, 이동, 삭제, 업로드, stage, commit하지 않는다.
+- Canonical scene ID는 executive `E1`-`E15`, planner `P1`-`P9`만 사용한다.
 
 ## Global Visual Rules
 

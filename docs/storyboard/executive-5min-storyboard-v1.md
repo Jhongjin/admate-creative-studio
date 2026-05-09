@@ -1,8 +1,8 @@
 # Executive 5min Storyboard v1
 
 작성일: 2026-05-06
-정렬일: 2026-05-07
-상태: Gate Creative-Studio-7 aligned
+정렬일: 2026-05-09
+상태: Gate Creative-Studio-8 aligned
 목적: AdMate를 AI Agent 기반 광고 운영 자동화 플랫폼으로 정의하고, Compass, Sentinel, Lens, Foresight, Agent Core가 광고 운영 loop를 어떻게 연결하는지 임원에게 5분 내외로 설명한다.
 
 ## 기준 문서
@@ -24,9 +24,14 @@
 - Presenter는 실제 임직원이 아닌 생성형 AI 가상 캐릭터이며 시작 또는 종료에 고지한다.
 - Product/Core 설명 장면은 presenter 얼굴보다 product card와 diagram을 중심으로 구성한다.
 
+## Canonical Scene ID 범위
+
+- Executive 5분 영상은 `E1`-`E15`를 canonical scene ID로 사용한다.
+- Scene ID, 시간, presenter rule은 `presenter-scene-asset-map-v1.md`와 `scene-level-dummy-visual-spec-v1.md`의 `E1`-`E15` 행과 일치해야 한다.
+
 ## 핵심 메시지
 
-AdMate는 AI Agent 기반 광고 운영 자동화 플랫폼이다. Compass는 정책/가이드 근거 확인의 출발점을 정리하고, Sentinel은 세팅 검수와 운영 이상 감지를 맡는다. Lens는 캡처와 증빙을 비식별 기준으로 정리하고, Foresight는 성과를 약속하지 않고 다음 판단을 위한 예측 가설과 분석 관점을 제안한다. Agent Core는 이 네 흐름을 권한, 승인, 감사 로그, 학습 후보 기준으로 연결한다.
+AdMate는 AI Agent 기반 광고 운영 자동화 플랫폼이다. Compass는 정책/가이드 근거 확인의 출발점을 정리하고, Sentinel은 세팅 검수와 운영 이상 감지 신호를 정리한다. Lens는 캡처와 증빙을 비식별 기준으로 정리하고, Foresight는 성과를 약속하지 않고 다음 판단을 위한 예측 가설과 분석 관점을 제안한다. Agent Core는 이 네 흐름을 권한, 승인, 감사 로그, 학습 후보 기준으로 연결한다.
 
 ## Scene Plan
 
@@ -38,8 +43,8 @@ AdMate는 AI Agent 기반 광고 운영 자동화 플랫폼이다. Compass는 �
 | E4 | 0:45-1:05 | AdMate ecosystem diagram | AI Agent 기반 광고 운영 자동화 플랫폼 정의 | diagram 중심, voice-over | 완전 자동 운영처럼 보이지 않게 |
 | E5 | 1:05-1:22 | Compass card + policy/guide source mock | Compass는 정책/가이드 근거 확인의 출발점을 정리 | voice-over only | 실제 brief, 정책 전문 금지 |
 | E6 | 1:22-1:40 | Sentinel card + setup validation/anomaly signal | Sentinel은 세팅 검수와 운영 이상 감지 신호를 정리 | voice-over only | 승인 없는 차단/집행 표현 금지 |
-| E7 | 1:40-1:57 | Lens card + sanitized proof tiles | Lens는 캡처와 증빙을 보고 가능한 흐름으로 정리 | voice-over only | 실제 UI capture 금지 |
-| E8 | 1:57-2:15 | Foresight card + hypothesis note | Foresight는 다음 판단을 위한 가설을 제안 | voice-over only | 성과 보장 표현 금지 |
+| E7 | 1:40-1:57 | Lens card + sanitized proof tiles | Lens는 캡처와 증빙을 비식별 기준으로 정리 | voice-over only | 실제 UI capture 금지 |
+| E8 | 1:57-2:15 | Foresight card + hypothesis note | Foresight는 다음 판단을 위한 예측 가설과 분석 관점을 제안 | voice-over only | 성과 보장 표현 금지 |
 | E9 | 2:15-2:55 | Agent Core diagram | Openclaw는 실행, Hermes는 기억/판단 기준 축적 | voice-over only | 내부 DB/API/log/secret 노출 금지 |
 | E10 | 2:55-3:35 | 7-step lifecycle loop | 기획부터 학습까지 연결되는 운영 loop | voice-over only | 실제 숫자, 계정명 없음 |
 | E11 | 3:35-3:55 | Knowledge card stack | 운영 지식이 조직 자산으로 남는 구조 | 짧은 presenter return 가능 | 실제 고객명, 내부 노하우 금지 |

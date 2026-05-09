@@ -1,6 +1,7 @@
 # Caption Disclosure Guide v1
 
 작성일: 2026-05-07
+정렬일: 2026-05-09
 Gate: Creative-Studio-8
 상태: caption and disclosure guideline aligned with narration scripts, no asset generation
 용도: executive 5min / planner 90s 영상의 가상 presenter 고지, dummy data 고지, caption tone 기준
@@ -11,8 +12,11 @@ Gate: Creative-Studio-8
 - 외부 영상 생성 서비스, AI API, TTS, lip-sync, image-to-video 호출을 하지 않는다.
 - 실제 광고주명, 캠페인명, 계정 정보, 성과 수치, 내부 화면 정보를 caption에 넣지 않는다.
 - `AI Influencer/` PNG는 파일명 reference로만 다루며 열람, 수정, 이동, 삭제, 업로드, stage, commit하지 않는다.
+- Canonical scene ID는 executive `E1`-`E15`, planner `P1`-`P9`만 사용한다.
 
 ## Required Disclosure Messages
+
+필수 guard는 presenter, mock, performance, human approval 네 범주로 관리한다.
 
 ### Virtual Presenter
 
@@ -61,6 +65,15 @@ Gate: Creative-Studio-8
 짧은 caption:
 
 `Human approval remains required`
+
+## Guard Requirements
+
+| Guard | Applies To | Required Protection |
+|---|---|---|
+| Presenter guard | `E1`-`E3`, `E11`, `E14`-`E15`, `P3`-`P4`, `P9` | 가상 presenter 고지를 시작 5초 이내 또는 종료 credit에 표시하고, 실제 임직원/동료/고객처럼 보이는 역할을 만들지 않는다. |
+| Mock guard | UI-like diagram, product card, proof tile, source/checklist mock | 실제 내부 화면, 광고주, 캠페인, 계정, 성과 데이터처럼 보이지 않도록 dummy label과 sanitized mock임을 표시한다. |
+| Performance guard | `E8`, `E13`, `P7` and any ROI/performance frame | Foresight와 ROI 표현은 성과 약속이 아니라 예측 가설과 분석 관점임을 고지한다. |
+| Human approval guard | `E6`, `E9`, `E13`, `P5`, `P8` | Sentinel, Agent Core, governance 표현은 최종 판단과 승인이 사람에게 남아 있음을 고지한다. |
 
 ## Placement Rules
 

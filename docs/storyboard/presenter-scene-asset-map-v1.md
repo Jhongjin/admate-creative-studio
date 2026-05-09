@@ -1,7 +1,8 @@
 # Presenter Scene Asset Map v1
 
 작성일: 2026-05-07
-상태: Gate Creative-Studio-7 aligned
+정렬일: 2026-05-09
+상태: Gate Creative-Studio-8 aligned
 용도: executive 5min / planner 90s 영상 scene별 presenter asset reference mapping
 
 ## Mapping Rules
@@ -11,6 +12,7 @@
 - 실제 제작 전에는 `video-production-safety-checklist-v1.md`와 `presenter-usage-boundary-v1.md`를 함께 확인한다.
 - Presenter가 실제 직원 또는 실제 플래너처럼 보이지 않도록 모든 영상에 가상 presenter 고지를 넣는다.
 - Product/Core 설명 장면은 diagram, product card, sanitized mock을 주 화면으로 사용하고 presenter는 voice-over 중심으로 제한한다.
+- Canonical scene ID는 executive `E1`-`E15`, planner `P1`-`P9`만 사용한다.
 
 ## Asset Legend
 
@@ -52,9 +54,9 @@
 | P2 | 0:05-0:08 반복 label 정렬 | none | voice-over only | Dummy labels only |
 | P3 | 0:08-0:18 AdMate 한 문장 소개 | `lua_video_01_scene_01_window_closeup.png` | reference, presenter shot | Friendly guide tone; include virtual presenter disclosure nearby |
 | P4 | 0:18-0:31 Compass / 정책-가이드 근거 확인 출발점 | `lua_brand_safe_profile_v1_ivory_shirt.png` | reference, limited presenter shot | Do not show real campaign brief or policy full text |
-| P5 | 0:31-0:46 Sentinel / 세팅 검수, 운영 이상 감지 | none | voice-over only | Product card and checklist visual lead |
+| P5 | 0:31-0:46 Sentinel / 세팅 검수, 운영 이상 감지 신호 | none | voice-over only | Product card and checklist visual lead |
 | P6 | 0:46-0:58 Lens / 캡처, 증빙 | none | voice-over only, background avoid | No real capture or account UI |
-| P7 | 0:58-1:12 Foresight / 예측, 분석 | none | voice-over only | No performance numbers or guaranteed outcome |
+| P7 | 0:58-1:12 Foresight / 예측 가설, 분석 관점 | none | voice-over only | No performance numbers or guaranteed outcome |
 | P8 | 1:12-1:24 Agent Core / 판단 축적 | `lua_side_profile_left_v1_window_blouse_alt.png` | reference only, optional side reference | Optional reference only; loop diagram remains primary visual |
 | P9 | 1:24-1:30 Closing | `lua_video_01_scene_04_soft_smile.png` | reference, presenter shot | Soft smile allowed; avoid coworker/testimonial feel |
 
