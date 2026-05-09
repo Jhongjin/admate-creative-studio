@@ -200,7 +200,9 @@ Planner prompt 작성 규칙:
 - [ ] Planner total duration은 1:30 기준을 유지한다.
 - [ ] 모든 scene에 start/end time과 duration이 있다.
 - [ ] E1 또는 E15에 가상 presenter 고지가 있다.
-- [ ] P3 또는 P9 주변에 가상 presenter 고지가 있다.
+- [ ] Planner 영상의 가상 presenter 고지는 P1/P2 시작부 또는 P9 종료부에 명확히 표시한다.
+- [ ] P3 첫 presenter 등장은 짧은 `AI-generated virtual presenter` caption을 함께 둘 수 있지만, 시작부 또는 종료부 고지를 대체하지 않는다.
+- [ ] Planner mock/dummy visual/data 고지는 시작부 또는 종료부에 명확히 표시하고, 실제 화면처럼 보이는 scene에도 필요한 고지를 둔다.
 - [ ] E5-E8 product scenes는 각 제품별 timecode를 보존한다.
 - [ ] P4-P8 product/Core scenes는 각 제품별 timecode를 보존한다.
 - [ ] 한 scene에는 하나의 핵심 message만 둔다.
