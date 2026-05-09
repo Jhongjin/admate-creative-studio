@@ -4,7 +4,22 @@
 - Date: 2026-05-09
 - Mode: read-only alignment audit
 - Source: `docs/prompts/creative-studio-hyperframes-storyboard-prompt-pack-v1.md`
-- Result: Pass with one P1 wording fix before production use
+- Result: Pass; prior P1 planner disclosure wording fix resolved
+
+## 0. Closure Update
+
+The prior P1 planner disclosure wording finding is resolved by the current prompt pack guidance.
+
+Confirmed current prompt pack status:
+
+- Planner disclosure is required at the `P1/P2` opening or `P9` closing.
+- `P3` first-presenter disclosure is only an optional short cue and does not replace the start/end disclosure requirement.
+- Planner `P1-P9` scene IDs remain canonical.
+- Hyperframes-style blocks remain planning group metadata only.
+
+No P0 blocker or remaining P1 fix is open for `CreativeStudio-Hyperframes-Alignment-2`.
+
+This closure update did not require or perform video generation, render execution, image generation, voiceover/TTS/lip-sync, asset creation/copy/upload/move/delete/modification, code change, package install, dependency change, external API call, vendor import, or `AI Influencer/` asset access.
 
 ## 1. Scope
 
