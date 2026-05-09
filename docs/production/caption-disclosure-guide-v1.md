@@ -70,7 +70,7 @@ Gate: Creative-Studio-8
 
 | Guard | Applies To | Required Protection |
 |---|---|---|
-| Presenter guard | `E1`-`E3`, `E11`, `E14`-`E15`, `P3`-`P4`, `P9` | 가상 presenter 고지를 시작 5초 이내 또는 종료 credit에 표시하고, 실제 임직원/동료/고객처럼 보이는 역할을 만들지 않는다. |
+| Presenter guard | Primary: `E1` 또는 `E15`, `P1`/`P2` opening 또는 `P9` closing. Optional short cue: `E2`-`E3`, `E11`, `E14`, `P3`-`P4`. | 가상 presenter 고지는 시작 5초 이내 또는 종료 credit에 표시한다. 첫 presenter 장면에는 짧은 `AI-generated virtual presenter` caption을 둘 수 있지만 primary disclosure를 대체하지 않는다. 실제 임직원/동료/고객처럼 보이는 역할을 만들지 않는다. |
 | Mock guard | UI-like diagram, product card, proof tile, source/checklist mock | 실제 내부 화면, 광고주, 캠페인, 계정, 성과 데이터처럼 보이지 않도록 dummy label과 sanitized mock임을 표시한다. |
 | Performance guard | `E8`, `E13`, `P7` and any ROI/performance frame | Foresight와 ROI 표현은 성과 약속이 아니라 예측 가설과 분석 관점임을 고지한다. |
 | Human approval guard | `E6`, `E9`, `E13`, `P5`, `P8` | Sentinel, Agent Core, governance 표현은 최종 판단과 승인이 사람에게 남아 있음을 고지한다. |

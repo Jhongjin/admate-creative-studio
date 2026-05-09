@@ -37,7 +37,7 @@ AdMate는 AI Agent 기반 광고 운영 자동화 플랫폼이다. Compass는 �
 
 | Scene | 시간 | 화면 | 내레이션/메시지 | Presenter | 안전 메모 |
 |---:|---:|---|---|---|---|
-| E1 | 0:00-0:05 | Minimal title card + disclosure | 가상 presenter 고지 | 미등장 또는 작은 profile still | 시작 5초 내 고지, 내부 화면 금지 |
+| E1 | 0:00-0:05 | Minimal title card + disclosure | 가상 presenter 고지 | presenter absent 우선, 필요 시 tiny non-identifying still only | 시작 5초 내 고지, 내부 화면 금지 |
 | E2 | 0:05-0:15 | `Why AdMate, now?` title | 왜 지금 AdMate가 필요한가 | 짧은 still transition 가능 | 실제 회사 내부자료 없음 |
 | E3 | 0:15-0:45 | Abstract operation cards | 반복 업무와 판단 분산 문제 | 짧은 presenter shot 가능 | dummy label only |
 | E4 | 0:45-1:05 | AdMate ecosystem diagram | AI Agent 기반 광고 운영 자동화 플랫폼 정의 | diagram 중심, voice-over | 완전 자동 운영처럼 보이지 않게 |

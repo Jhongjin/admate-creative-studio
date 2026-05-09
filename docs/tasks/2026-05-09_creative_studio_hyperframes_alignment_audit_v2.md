@@ -54,9 +54,9 @@ Key pass points:
 - Mock visual safety rules match the dummy visual spec and mock visual pack plan.
 - Hyperframes code, CLI, render, package, catalog, skill, and external asset carry-over is explicitly prohibited.
 
-P1 fix:
+Resolved prior finding:
 
-- The planner timing checklist says `P3 또는 P9 주변에 가상 presenter 고지가 있다.` This is mostly safe because P9 is an approved closing placement, but it is slightly looser than the caption guide's requirement that virtual presenter disclosure appears at the start or ending credit. Before production use, revise that checklist to require P1/P2 opening or P9 closing disclosure, with P3 short disclosure only as an optional first-presenter cue.
+- The earlier planner disclosure wording issue is resolved. Current prompt pack guidance requires presenter disclosure at the `P1/P2` opening or `P9` closing, and treats `P3` first-presenter disclosure only as an optional short cue.
 
 No P0 blocker was found.
 
@@ -142,13 +142,10 @@ Pass:
 - Human approval wording matches the Sentinel, Agent Core, and governance requirement.
 - Product names are preserved as `Compass`, `Sentinel`, `Lens`, `Foresight`, and `Agent Core`.
 
-P1 wording fix:
+Resolved prior finding:
 
-- Prompt pack timing checklist currently says planner disclosure should appear near `P3 또는 P9`.
-- Existing caption guide says virtual presenter disclosure should appear within the first 5 seconds or in the ending credit, and planner script says disclosure appears at the beginning or ending.
-- Recommended wording: `P1/P2 시작부 또는 P9 종료부에 가상 presenter 고지가 있다. P3 첫 presenter 등장은 짧은 AI-generated virtual presenter caption을 선택적으로 함께 둘 수 있다.`
-
-This is not a blocker because the prompt pack already includes the correct disclosure text and P9 remains an allowed placement. It should be tightened before handing the pack to a production operator.
+- The prompt pack now says planner disclosure should appear at the `P1/P2` opening or `P9` closing.
+- `P3` first presenter appearance may include a short `AI-generated virtual presenter` caption, but it does not replace the opening or closing disclosure.
 
 ## 7. Presenter Cue Alignment
 
@@ -195,7 +192,7 @@ None.
 
 ### P1 Fixes
 
-1. Tighten planner virtual presenter disclosure placement wording so it cannot be interpreted as P3-only disclosure.
+None open.
 
 ### P2 Improvements
 
@@ -213,13 +210,13 @@ None.
 
 Decision:
 
-- `Pass with P1 rewrite`
+- `Pass`
 
 Recommended next Gate:
 
-- `Gate CreativeStudio-Hyperframes-PromptPack-2 disclosure wording patch`
+- `Gate CreativeStudio-8 document-only alignment patch`
 
-After the P1 wording patch, proceed to:
+After the document-only alignment patch, proceed to:
 
 - `Gate CreativeStudio-Executive-Storyboard-QA-1`
 - `Gate CreativeStudio-Planner-Storyboard-QA-1`

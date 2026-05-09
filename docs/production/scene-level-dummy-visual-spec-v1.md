@@ -21,7 +21,8 @@ Gate: Creative-Studio-8
 - Optional social cutdown ratio: 9:16 vertical, 별도 승인 전에는 제작하지 않는다.
 - 한 frame에는 핵심 caption 1개와 dummy label 3-5개 이하만 둔다.
 - 상세 table처럼 보이는 UI도 실제 dashboard가 아니라 abstract card로 표현한다.
-- 숫자는 scene에 꼭 필요한 경우에만 `Sample score`, `1.2x`, `~20%`처럼 mock임을 알 수 있게 쓴다.
+- 숫자는 scene에 꼭 필요한 경우에만 mock임을 알 수 있는 placeholder로 쓴다.
+- Mock 숫자는 non-performance UI placeholder에만 허용한다. Foresight, ROI, savings, budget, performance frame에서는 별도 승인 전까지 숫자형 claim을 쓰지 않는다.
 - URL은 `example.com`, `admate.ai.kr`, `demo.admate.ai.kr`만 허용한다.
 - Presenter가 등장하는 frame은 `caption-disclosure-guide-v1.md`의 고지 기준을 따른다.
 

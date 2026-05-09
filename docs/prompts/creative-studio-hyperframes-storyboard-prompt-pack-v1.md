@@ -435,6 +435,7 @@ Total duration:
 Scene mapping status:
 P0 blockers:
 P1 fixes:
+Resolved prior findings:
 Product role alignment:
 Caption/disclosure coverage:
 Presenter cue alignment:
@@ -443,6 +444,10 @@ Frame QA:
 No-touch areas confirmed:
 Next Gate:
 ```
+
+Review output rule:
+
+- Prior findings that are already fixed must be removed from active `P1 fixes` or moved to `Resolved prior findings` so closure notes and readiness findings do not disagree.
 
 Decision values:
 

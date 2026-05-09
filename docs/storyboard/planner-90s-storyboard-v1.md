@@ -36,7 +36,7 @@ AdMate는 미디어플래너를 대체하지 않는다. Compass는 정책/가이
 
 | Scene | 시간 | 화면 | 메시지 | Presenter | 안전 메모 |
 |---:|---:|---|---|---|---|
-| P1 | 0:00-0:05 | Abstract task stack | 반복 확인이 쌓이는 현실 | 미등장 또는 small profile | 실제 업무 화면 금지 |
+| P1 | 0:00-0:05 | Abstract task stack | 반복 확인이 쌓이는 현실 | 미등장 또는 tiny non-identifying still only; no presenter shot | 실제 업무 화면 금지 |
 | P2 | 0:05-0:08 | Task cards align into flow | 정책, 세팅, 캡처, 결과 정리의 반복 | voice-over only | dummy label only |
 | P3 | 0:08-0:18 | AdMate work partner card | 반복 확인을 줄이고 판단에 집중하게 돕는다 | friendly guide shot | 플래너 대체 표현 금지 |
 | P4 | 0:18-0:31 | Compass card + policy/guide source mock | Compass는 정책/가이드 근거 확인의 출발점을 정리한다 | limited presenter shot 가능 | 실제 campaign brief 금지 |
