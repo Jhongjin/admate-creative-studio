@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { execFileSync } from "node:child_process";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 
 const CHECK = "[check-creative-studio-safety-static]";
@@ -41,6 +41,90 @@ const mediaExtensions = new Set([
   ".flac",
   ".ogg",
 ]);
+
+const binaryLikeExtensions = new Set([
+  ...mediaExtensions,
+  ".7z",
+  ".ai",
+  ".bin",
+  ".cer",
+  ".crt",
+  ".dll",
+  ".dmg",
+  ".doc",
+  ".docx",
+  ".eot",
+  ".exe",
+  ".fig",
+  ".ico",
+  ".iso",
+  ".jar",
+  ".key",
+  ".otf",
+  ".p12",
+  ".pdf",
+  ".pem",
+  ".pfx",
+  ".pkg",
+  ".ppt",
+  ".pptx",
+  ".psd",
+  ".rar",
+  ".sketch",
+  ".ttf",
+  ".woff",
+  ".woff2",
+  ".xls",
+  ".xlsx",
+  ".zip",
+]);
+
+const textSourceExtensions = new Set([
+  ".cjs",
+  ".css",
+  ".csv",
+  ".cts",
+  ".html",
+  ".ini",
+  ".js",
+  ".json",
+  ".jsonc",
+  ".jsx",
+  ".md",
+  ".mdx",
+  ".mjs",
+  ".mts",
+  ".scss",
+  ".sh",
+  ".sql",
+  ".ts",
+  ".tsx",
+  ".txt",
+  ".xml",
+  ".yaml",
+  ".yml",
+]);
+
+const textSourceBasenames = new Set([
+  ".env.example",
+  ".gitattributes",
+  ".gitignore",
+  "AGENTS.md",
+  "LICENSE",
+  "NOTICE",
+  "README.md",
+]);
+
+const localEnvBasenames = new Set([
+  ".env",
+  ".env.development",
+  ".env.local",
+  ".env.production",
+  ".env.staging",
+  ".env.test",
+]);
+
+const largeChangedFileBytes = 1024 * 1024;
 
 const markerGroups = [
   {
@@ -129,6 +213,53 @@ const stopPhraseChecks = [
 const safetyContextPattern =
   /(금지|비범위|avoid|prohibited|not allowed|stop condition|중단|없다|아니다|아닙니다|아니라|하지 않는다|사용하지 않는다|포함하지 않는다|노출하지 않는다|쓰지 않는다|넣지 않는다|제거|보장이 아니라|처럼 들리는|처럼 보인다|처럼 읽히는|같은|검수 없이|stage,\s*commit|no positive claim|reject|unapproved|mock|dummy|비식별|sanitized|고지|확인|체크|리스크|조건|gate|review|reviewer|approval|required|실제 .*아닌|not .*guarantee|not real|does not|does not represent)/i;
 
+const secretKeyPattern =
+  /(?:api[_-]?key|access[_-]?token|auth[_-]?token|bearer[_-]?token|client[_-]?secret|credential|credentials|password|passwd|private[_-]?key|pwd|refresh[_-]?token|secret|secret[_-]?key|session[_-]?token|signing[_-]?secret|webhook[_-]?secret)/i;
+
+const secretAssignmentPattern =
+  /(?:^|[\s{[,])(?:(?:export|const|let|var)\s+)?["']?([A-Z0-9_.-]*(?:api[_-]?key|access[_-]?token|auth[_-]?token|bearer[_-]?token|client[_-]?secret|credential|credentials|password|passwd|private[_-]?key|pwd|refresh[_-]?token|secret|secret[_-]?key|session[_-]?token|signing[_-]?secret|webhook[_-]?secret)[A-Z0-9_.-]*)["']?\s*(?:=|:)\s*["'`]?([^"'`\s,;#)}\]]+)/gi;
+
+const authorizationBearerPattern =
+  /authorization\s*(?:=|:)\s*["'`]?Bearer\s+([A-Za-z0-9._~+/=-]{20,})/i;
+
+const placeholderValuePattern =
+  /^(?:<[^>]+>|\$\{[^}]+}|%[^%]+%|REDACTED|redacted|changeme|change_me|example|sample|dummy|mock|test|todo|your[_-]?[a-z0-9_-]+|[xX*._-]{8,}|0{8,}|1{8,}|\.\.\.)$/i;
+
+const knownSecretPatterns = [
+  {
+    name: "private key block",
+    pattern: /-----BEGIN(?: [A-Z0-9]+)* PRIVATE KEY-----/i,
+  },
+  {
+    name: "AWS access key id",
+    pattern: /\b(?:A3T[A-Z0-9]|AKIA|ASIA)[A-Z0-9]{16}\b/,
+  },
+  {
+    name: "GitHub token",
+    pattern: /\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9_]{30,}\b|\bgithub_pat_[A-Za-z0-9_]{20,}_[A-Za-z0-9_]{20,}\b/,
+  },
+  {
+    name: "Google API key",
+    pattern: /\bAIza[0-9A-Za-z_-]{35}\b/,
+  },
+  {
+    name: "OpenAI-style API key",
+    pattern: /\bsk-(?:proj-)?[A-Za-z0-9_-]{32,}\b/,
+  },
+  {
+    name: "Slack token",
+    pattern: /\bxox[baprs]-[A-Za-z0-9-]{20,}\b/,
+  },
+  {
+    name: "Stripe live key",
+    pattern: /\b(?:sk|rk)_live_[A-Za-z0-9]{24,}\b/,
+  },
+  {
+    name: "JWT-like token",
+    pattern: /\beyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\b/,
+  },
+];
+
 const errors = [];
 
 function relPath(...parts) {
@@ -137,6 +268,31 @@ function relPath(...parts) {
 
 function normalizeGitPath(filePath) {
   return filePath.replaceAll("\\", "/");
+}
+
+function isAiInfluencerPath(filePath) {
+  const normalized = normalizeGitPath(filePath);
+  return normalized === "AI Influencer" || normalized.startsWith("AI Influencer/");
+}
+
+function isLocalEnvPath(filePath) {
+  const normalized = normalizeGitPath(filePath);
+  const basename = path.basename(normalized);
+  return localEnvBasenames.has(basename) || (basename.startsWith(".env.") && basename !== ".env.example");
+}
+
+function isTextSourcePath(filePath) {
+  const normalized = normalizeGitPath(filePath);
+  if (isAiInfluencerPath(normalized)) return false;
+
+  const basename = path.basename(normalized);
+  const extension = path.extname(normalized).toLowerCase();
+  return (
+    textSourceExtensions.has(extension) ||
+    textSourceBasenames.has(basename) ||
+    basename === ".env" ||
+    (basename.startsWith(".env.") && basename !== ".env")
+  );
 }
 
 function readText(relativePath) {
@@ -177,12 +333,36 @@ function checkChangedPathSafety(paths, label) {
     const normalized = normalizeGitPath(filePath);
     const extension = path.extname(normalized).toLowerCase();
 
-    if (normalized === "AI Influencer" || normalized.startsWith("AI Influencer/")) {
+    if (isAiInfluencerPath(normalized)) {
       errors.push(`${label} includes read-only asset path: ${normalized}`);
+      continue;
     }
 
     if (mediaExtensions.has(extension)) {
       errors.push(`${label} includes media output/asset path: ${normalized}`);
+      continue;
+    }
+
+    if (binaryLikeExtensions.has(extension)) {
+      errors.push(`${label} includes binary-like asset path: ${normalized}`);
+      continue;
+    }
+
+    if (isLocalEnvPath(normalized)) {
+      errors.push(`${label} includes local env/credential path: ${normalized}`);
+      continue;
+    }
+
+    const absolutePath = relPath(normalized);
+    if (!existsSync(absolutePath)) continue;
+
+    const stats = statSync(absolutePath);
+    if (!stats.isFile()) continue;
+
+    if (stats.size > largeChangedFileBytes && !isTextSourcePath(normalized)) {
+      errors.push(
+        `${label} includes large non-text/binary-like path (${Math.ceil(stats.size / 1024)} KiB): ${normalized}`,
+      );
     }
   }
 }
@@ -223,15 +403,12 @@ function checkGitIgnoreSafety() {
 function trackedTextFiles() {
   const tracked = gitZ(["ls-files", "-z"]);
   return tracked.filter((filePath) => {
-    const normalized = normalizeGitPath(filePath);
-    if (normalized === "AI Influencer" || normalized.startsWith("AI Influencer/")) {
-      return false;
-    }
-
-    const basename = path.basename(normalized);
-    const extension = path.extname(normalized).toLowerCase();
-    return extension === ".md" || extension === ".mjs" || basename === "AGENTS.md" || basename === "README.md";
+    return isTextSourcePath(filePath) && existsSync(relPath(filePath));
   });
+}
+
+function stagedTextFiles() {
+  return gitZ(["diff", "--cached", "--name-only", "--diff-filter=ACMRT", "-z"]).filter(isTextSourcePath);
 }
 
 function isAllowedSafetyContext(lines, index) {
@@ -256,6 +433,89 @@ function checkStopPhrases() {
   }
 }
 
+function normalizeSecretCandidate(value) {
+  return value
+    .trim()
+    .replace(/^Bearer\s+/i, "")
+    .replace(/^[`"']+|[`"',;]+$/g, "")
+    .trim();
+}
+
+function looksLikePlaceholder(value) {
+  if (placeholderValuePattern.test(value)) return true;
+  if (/^(?:x|X|\*|0|1|-|_|\.)+$/.test(value)) return true;
+  if (/(?:example|placeholder|dummy|mock|sample|redacted|changeme|your[_-]?)/i.test(value)) return true;
+  return false;
+}
+
+function looksLikeSecretValue(value) {
+  const cleaned = normalizeSecretCandidate(value);
+  if (cleaned.length < 16) return false;
+  if (cleaned.length > 4096) return false;
+  if (looksLikePlaceholder(cleaned)) return false;
+  if (!/^[A-Za-z0-9_./+=:@~$%{}<>-]+$/.test(cleaned)) return false;
+  if (/^(?:true|false|null|undefined|none)$/i.test(cleaned)) return false;
+  if (/^https?:\/\//i.test(cleaned)) return false;
+
+  const compact = cleaned.replace(/[-_.:/+=@~$%{}<>]/g, "");
+  if (compact.length < 12) return false;
+  if (new Set(compact).size <= 4) return false;
+
+  const hasLetter = /[A-Za-z]/.test(cleaned);
+  const hasDigit = /\d/.test(cleaned);
+  const hasSymbol = /[_./+=:@~$%{}<>-]/.test(cleaned);
+  return (hasLetter && hasDigit && cleaned.length >= 20) || (hasLetter && hasSymbol && cleaned.length >= 24);
+}
+
+function isLikelySecretExampleContext(line) {
+  return /\b(?:example|placeholder|dummy|mock|sample|redacted|sanitized|fake|test[_-]?only)\b/i.test(line);
+}
+
+function checkSecretLikeValuesInText(filePath, text, label) {
+  const lines = text.split(/\r?\n/);
+
+  lines.forEach((line, index) => {
+    for (const check of knownSecretPatterns) {
+      if (check.pattern.test(line) && !isLikelySecretExampleContext(line)) {
+        errors.push(`${filePath}:${index + 1} ${label} contains likely secret (${check.name})`);
+      }
+    }
+
+    const bearerMatch = authorizationBearerPattern.exec(line);
+    if (bearerMatch && looksLikeSecretValue(bearerMatch[1])) {
+      errors.push(`${filePath}:${index + 1} ${label} contains likely secret (authorization bearer token)`);
+    }
+
+    secretAssignmentPattern.lastIndex = 0;
+    for (let match = secretAssignmentPattern.exec(line); match; match = secretAssignmentPattern.exec(line)) {
+      const key = match[1];
+      const value = normalizeSecretCandidate(match[2]);
+      if (!secretKeyPattern.test(key) || isLikelySecretExampleContext(line)) continue;
+
+      if (looksLikeSecretValue(value)) {
+        errors.push(`${filePath}:${index + 1} ${label} contains likely secret assignment (${key})`);
+      }
+    }
+  });
+}
+
+function readStagedText(filePath) {
+  return execFileSync("git", ["show", `:${filePath}`], {
+    cwd: repoRoot,
+    encoding: "utf8",
+  });
+}
+
+function checkSecretLikeValues() {
+  for (const filePath of trackedTextFiles()) {
+    checkSecretLikeValuesInText(filePath, readText(filePath), "working tree");
+  }
+
+  for (const filePath of stagedTextFiles()) {
+    checkSecretLikeValuesInText(filePath, readStagedText(filePath), "staged diff");
+  }
+}
+
 for (const docPath of requiredSafetyDocs) {
   if (!existsSync(relPath(docPath))) {
     errors.push(`missing required safety source: ${docPath}`);
@@ -267,6 +527,7 @@ checkGitIgnoreSafety();
 checkChangedPathSafety(parsePorcelainStatus(), "working tree or index");
 checkChangedPathSafety(gitZ(["diff", "--cached", "--name-only", "-z"]), "staged diff");
 checkStopPhrases();
+checkSecretLikeValues();
 
 if (errors.length > 0) {
   console.error(`${CHECK} failed`);
