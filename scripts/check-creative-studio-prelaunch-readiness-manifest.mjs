@@ -40,6 +40,14 @@ const requiredSections = [
   /^## Readiness Decision$/m,
 ];
 
+const requiredPackageScripts = {
+  "check:creative-studio-prelaunch-readiness":
+    "node scripts/check-creative-studio-prelaunch-readiness-manifest.mjs",
+  "check:creative-studio-safety-static": "node scripts/check-creative-studio-safety-static.mjs",
+  "verify:prelaunch-local":
+    "npm run check:creative-studio-prelaunch-readiness && npm run check:creative-studio-safety-static",
+};
+
 const requiredPhrases = [
   /AI-generated virtual presenter|가상\s*(?:presenter|캐릭터|인물)/i,
   /not (?:claim to be|represent).*real person|실제 인물/i,
@@ -228,7 +236,30 @@ function checkManifest() {
   }
 }
 
+function checkPackageScripts() {
+  const packageJsonPath = relPath("package.json");
+  if (!existsSync(packageJsonPath)) {
+    errors.push("missing package entrypoint manifest: package.json");
+    return;
+  }
+
+  let packageJson;
+  try {
+    packageJson = JSON.parse(readFileSync(packageJsonPath, "utf8"));
+  } catch (error) {
+    errors.push(`package.json is not valid JSON: ${error.message}`);
+    return;
+  }
+
+  for (const [scriptName, expectedCommand] of Object.entries(requiredPackageScripts)) {
+    if (packageJson.scripts?.[scriptName] !== expectedCommand) {
+      errors.push(`package.json script ${scriptName} must be: ${expectedCommand}`);
+    }
+  }
+}
+
 checkManifest();
+checkPackageScripts();
 checkChangedPathSafety(parsePorcelainStatus(), "working tree or index");
 checkChangedPathSafety(gitZ(["diff", "--cached", "--name-only", "-z"]), "staged diff");
 

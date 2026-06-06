@@ -1,0 +1,11 @@
+{
+  "name": "admate-creative-studio",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:creative-studio-prelaunch-readiness": "node scripts/check-creative-studio-prelaunch-readiness-manifest.mjs",
+    "check:creative-studio-safety-static": "node scripts/check-creative-studio-safety-static.mjs",
+    "verify:prelaunch-local": "npm run check:creative-studio-prelaunch-readiness && npm run check:creative-studio-safety-static"
+  }
+}

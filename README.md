@@ -24,6 +24,7 @@ AdMate Creative Studio Agent는 광고/미디어 업무에서 creative narrative
 ```text
 .
 ├── AGENTS.md
+├── package.json
 ├── README.md
 ├── AI Influencer/
 └── docs/
@@ -47,6 +48,9 @@ AdMate Creative Studio Agent는 광고/미디어 업무에서 creative narrative
 ## Static Checks
 
 ```powershell
+npm run verify:prelaunch-local
+npm run check:creative-studio-prelaunch-readiness
+npm run check:creative-studio-safety-static
 node scripts\check-creative-studio-prelaunch-readiness-manifest.mjs
 node scripts\check-creative-studio-safety-static.mjs
 ```

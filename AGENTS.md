@@ -29,6 +29,9 @@
 문서 변경 후 가능한 경우 다음을 실행한다.
 
 ```powershell
+npm run verify:prelaunch-local
+npm run check:creative-studio-prelaunch-readiness
+npm run check:creative-studio-safety-static
 node scripts\check-creative-studio-prelaunch-readiness-manifest.mjs
 node scripts\check-creative-studio-safety-static.mjs
 git diff --check
