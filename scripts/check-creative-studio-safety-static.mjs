@@ -15,6 +15,7 @@ const requiredSafetyDocs = [
   "README.md",
   "docs/security/video-production-safety-checklist-v1.md",
   "docs/production/video-production-safety-gate-v1.md",
+  "docs/production/creative-studio-prelaunch-readiness-manifest-v1.md",
   "docs/presenter/presenter-usage-boundary-v1.md",
   "docs/production/lua-instagram-launch-pack-v1.md",
 ];
@@ -261,6 +262,17 @@ const knownSecretPatterns = [
 ];
 
 const errors = [];
+
+function runPrelaunchReadinessManifestGuard() {
+  try {
+    execFileSync(process.execPath, ["scripts/check-creative-studio-prelaunch-readiness-manifest.mjs"], {
+      cwd: repoRoot,
+      stdio: "inherit",
+    });
+  } catch {
+    errors.push("prelaunch readiness manifest guard failed");
+  }
+}
 
 function relPath(...parts) {
   return path.join(repoRoot, ...parts);
@@ -515,6 +527,8 @@ function checkSecretLikeValues() {
     checkSecretLikeValuesInText(filePath, readStagedText(filePath), "staged diff");
   }
 }
+
+runPrelaunchReadinessManifestGuard();
 
 for (const docPath of requiredSafetyDocs) {
   if (!existsSync(relPath(docPath))) {

@@ -22,12 +22,15 @@
 - `docs/storyboard/executive-5min-storyboard-v1.md`: 임원 보고용 5분 영상 스토리보드
 - `docs/storyboard/planner-90s-storyboard-v1.md`: 미디어플래너용 90초 소개 영상 스토리보드
 - `docs/security/video-production-safety-checklist-v1.md`: 영상 제작 안전 체크리스트
+- `docs/production/creative-studio-prelaunch-readiness-manifest-v1.md`: prelaunch local/docs-only readiness와 human approval gates
 
 ## 검증 체크
 
 문서 변경 후 가능한 경우 다음을 실행한다.
 
 ```powershell
+node scripts\check-creative-studio-prelaunch-readiness-manifest.mjs
+node scripts\check-creative-studio-safety-static.mjs
 git diff --check
 git status --short
 ```

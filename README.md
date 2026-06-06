@@ -42,6 +42,14 @@ AdMate Creative Studio Agent는 광고/미디어 업무에서 creative narrative
 - [Executive 5min Storyboard v1](docs/storyboard/executive-5min-storyboard-v1.md)
 - [Planner 90s Storyboard v1](docs/storyboard/planner-90s-storyboard-v1.md)
 - [Video Production Safety Checklist v1](docs/security/video-production-safety-checklist-v1.md)
+- [Prelaunch Readiness Manifest v1](docs/production/creative-studio-prelaunch-readiness-manifest-v1.md)
+
+## Static Checks
+
+```powershell
+node scripts\check-creative-studio-prelaunch-readiness-manifest.mjs
+node scripts\check-creative-studio-safety-static.mjs
+```
 
 ## 운영 메모
 
