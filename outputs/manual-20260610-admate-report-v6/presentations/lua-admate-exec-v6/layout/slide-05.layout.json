@@ -1,0 +1,1167 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ak9hds",
+    "id": "ak9hds",
+    "slide": 5,
+    "layoutId": "597f4982-29b6-4386-8d78-81faa5c9ed1d",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "8cd4ff8c-0d34-4cea-93d8-897c7b4e1897",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos Mono",
+      "Pretendard"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "597f4982-29b6-4386-8d78-81faa5c9ed1d",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "8cd4ff8c-0d34-4cea-93d8-897c7b4e1897",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "8cd4ff8c-0d34-4cea-93d8-897c7b4e1897",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9s36hcr",
+      "id": "1",
+      "name": "background",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#161817",
+      "lineColor": "#161817",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p0bi9s36",
+      "id": "2",
+      "name": "slide-title",
+      "bbox": [
+        72,
+        74,
+        400,
+        112
+      ],
+      "geometry": "rect",
+      "text": "Agent Core는\n흐름을 묶습니다.",
+      "textPreview": "Agent Core는 | 흐름을 묶습니다.",
+      "resolvedFontSize": 45,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 45,
+        "typeface": "Pretendard",
+        "color": "#FFF9EF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Agent Core는"
+          },
+          {
+            "index": 2,
+            "text": "흐름을 묶습니다."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Agent Core는",
+          "resolvedTextStyle": {
+            "fontSize": 45,
+            "typeface": "Pretendard",
+            "color": "#FFF9EF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Agent Core는",
+              "fontSize": 45,
+              "typeface": "Pretendard",
+              "color": "#FFF9EF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "흐름을 묶습니다.",
+          "resolvedTextStyle": {
+            "fontSize": 45,
+            "typeface": "Pretendard",
+            "color": "#FFF9EF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "흐름을 묶습니다.",
+              "fontSize": 45,
+              "typeface": "Pretendard",
+              "color": "#FFF9EF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0fepkzup",
+      "id": "3",
+      "name": "slide-subcopy",
+      "bbox": [
+        72,
+        226,
+        380,
+        118
+      ],
+      "geometry": "rect",
+      "text": "각 서비스의 결과가 따로 끝나지 않게 실행, 기록, 권한, 승인 이력을 연결합니다.\n최종 판단과 승인은 사람이 합니다.",
+      "textPreview": "각 서비스의 결과가 따로 끝나지 않게 실행, 기록, 권한, 승인 이력을 연결합니다. | 최종 판단과 승인은 사람이 합니다.",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Pretendard",
+        "color": "#D8D0C4",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "각 서비스의 결과가 따로 끝나지 않게"
+          },
+          {
+            "index": 2,
+            "text": "실행, 기록, 권한, 승인 이력을"
+          },
+          {
+            "index": 3,
+            "text": "연결합니다."
+          },
+          {
+            "index": 4,
+            "text": "최종 판단과 승인은 사람이 합니다."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "각 서비스의 결과가 따로 끝나지 않게 실행, 기록, 권한, 승인 이력을 연결합니다.",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Pretendard",
+            "color": "#D8D0C4",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "각 서비스의 결과가 따로 끝나지 않게 실행, 기록, 권한, 승인 이력을 연결합니다.",
+              "fontSize": 22,
+              "typeface": "Pretendard",
+              "color": "#D8D0C4"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "최종 판단과 승인은 사람이 합니다.",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Pretendard",
+            "color": "#D8D0C4",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "최종 판단과 승인은 사람이 합니다.",
+              "fontSize": 22,
+              "typeface": "Pretendard",
+              "color": "#D8D0C4"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bi9s36hc",
+      "id": "4",
+      "name": "approval-spine",
+      "bbox": [
+        700,
+        104,
+        48,
+        456
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F6F69",
+      "lineColor": "#0F6F69",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ixczed8v",
+      "id": "5",
+      "name": "label-bar",
+      "bbox": [
+        648,
+        80,
+        164,
+        22
+      ],
+      "geometry": "rect",
+      "fillColor": "#B78A45",
+      "lineColor": "#B78A45",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tovahoza",
+      "id": "6",
+      "name": "label-text",
+      "bbox": [
+        658,
+        84,
+        144,
+        15
+      ],
+      "geometry": "rect",
+      "text": "CONTROL LAYER",
+      "textPreview": "CONTROL LAYER",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos Mono",
+        "color": "#FFF9EF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CONTROL LAYER"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CONTROL LAYER",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos Mono",
+            "color": "#FFF9EF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CONTROL LAYER",
+              "fontSize": 12,
+              "typeface": "Aptos Mono",
+              "color": "#FFF9EF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/032lszqt",
+      "id": "7",
+      "name": "left-control",
+      "bbox": [
+        458,
+        160,
+        196,
+        104
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFF9EF",
+      "lineColor": "#DED2C0",
+      "lineWidth": 1
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b6xkf6dc",
+      "id": "8",
+      "name": "small-text",
+      "bbox": [
+        482,
+        182,
+        150,
+        20
+      ],
+      "geometry": "rect",
+      "text": "권한",
+      "textPreview": "권한",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "Pretendard",
+        "color": "#2A2E2D",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "권한"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "권한",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Pretendard",
+            "color": "#2A2E2D",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "권한",
+              "fontSize": 20,
+              "typeface": "Pretendard",
+              "color": "#2A2E2D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/il0rqd4v",
+      "id": "9",
+      "name": "small-text",
+      "bbox": [
+        482,
+        218,
+        150,
+        20
+      ],
+      "geometry": "rect",
+      "text": "누가 실행할 수 있는가",
+      "textPreview": "누가 실행할 수 있는가",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Pretendard",
+        "color": "#64615A",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "누가 실행할 수 있는가"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "누가 실행할 수 있는가",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Pretendard",
+            "color": "#64615A",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "누가 실행할 수 있는가",
+              "fontSize": 14,
+              "typeface": "Pretendard",
+              "color": "#64615A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ovahoza1",
+      "id": "10",
+      "name": "rule",
+      "bbox": [
+        654,
+        212,
+        46,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#B78A45",
+      "lineColor": "#B78A45",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dg7adsji",
+      "id": "11",
+      "name": "left-control",
+      "bbox": [
+        458,
+        330,
+        196,
+        104
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFF9EF",
+      "lineColor": "#DED2C0",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6tovahoz",
+      "id": "12",
+      "name": "small-text",
+      "bbox": [
+        482,
+        352,
+        150,
+        20
+      ],
+      "geometry": "rect",
+      "text": "실행 기록",
+      "textPreview": "실행 기록",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "Pretendard",
+        "color": "#2A2E2D",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "실행 기록"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "실행 기록",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Pretendard",
+            "color": "#2A2E2D",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "실행 기록",
+              "fontSize": 20,
+              "typeface": "Pretendard",
+              "color": "#2A2E2D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vahoza1g",
+      "id": "13",
+      "name": "small-text",
+      "bbox": [
+        482,
+        388,
+        150,
+        20
+      ],
+      "geometry": "rect",
+      "text": "무엇을 실행했는가",
+      "textPreview": "무엇을 실행했는가",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Pretendard",
+        "color": "#64615A",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "무엇을 실행했는가"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "무엇을 실행했는가",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Pretendard",
+            "color": "#64615A",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "무엇을 실행했는가",
+              "fontSize": 14,
+              "typeface": "Pretendard",
+              "color": "#64615A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/onyd0z61",
+      "id": "14",
+      "name": "rule",
+      "bbox": [
+        654,
+        382,
+        46,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#B78A45",
+      "lineColor": "#B78A45",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d8v6psfi",
+      "id": "15",
+      "name": "right-control",
+      "bbox": [
+        794,
+        160,
+        248,
+        104
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFF9EF",
+      "lineColor": "#DED2C0",
+      "lineWidth": 1
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6hcrmhk3",
+      "id": "16",
+      "name": "small-text",
+      "bbox": [
+        818,
+        182,
+        190,
+        20
+      ],
+      "geometry": "rect",
+      "text": "승인",
+      "textPreview": "승인",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "Pretendard",
+        "color": "#2A2E2D",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "승인"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "승인",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Pretendard",
+            "color": "#2A2E2D",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "승인",
+              "fontSize": 20,
+              "typeface": "Pretendard",
+              "color": "#2A2E2D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z25kb6xk",
+      "id": "17",
+      "name": "small-text",
+      "bbox": [
+        818,
+        218,
+        198,
+        20
+      ],
+      "geometry": "rect",
+      "text": "어디서 승인했는가",
+      "textPreview": "어디서 승인했는가",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Pretendard",
+        "color": "#64615A",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "어디서 승인했는가"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "어디서 승인했는가",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Pretendard",
+            "color": "#64615A",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "어디서 승인했는가",
+              "fontSize": 14,
+              "typeface": "Pretendard",
+              "color": "#64615A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oj2t83it",
+      "id": "18",
+      "name": "rule",
+      "bbox": [
+        748,
+        212,
+        46,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#B78A45",
+      "lineColor": "#B78A45",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4vmtwra",
+      "id": "19",
+      "name": "right-control",
+      "bbox": [
+        794,
+        330,
+        248,
+        104
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFF9EF",
+      "lineColor": "#DED2C0",
+      "lineWidth": 1
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwfyxobm",
+      "id": "20",
+      "name": "small-text",
+      "bbox": [
+        818,
+        352,
+        190,
+        20
+      ],
+      "geometry": "rect",
+      "text": "학습 후보",
+      "textPreview": "학습 후보",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "Pretendard",
+        "color": "#2A2E2D",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "학습 후보"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "학습 후보",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Pretendard",
+            "color": "#2A2E2D",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "학습 후보",
+              "fontSize": 20,
+              "typeface": "Pretendard",
+              "color": "#2A2E2D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obm58z25",
+      "id": "21",
+      "name": "small-text",
+      "bbox": [
+        818,
+        388,
+        198,
+        20
+      ],
+      "geometry": "rect",
+      "text": "다음에 다시 쓸 기준인가",
+      "textPreview": "다음에 다시 쓸 기준인가",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Pretendard",
+        "color": "#64615A",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "다음에 다시 쓸 기준인가"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "다음에 다시 쓸 기준인가",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Pretendard",
+            "color": "#64615A",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "다음에 다시 쓸 기준인가",
+              "fontSize": 14,
+              "typeface": "Pretendard",
+              "color": "#64615A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zqtcj6to",
+      "id": "22",
+      "name": "rule",
+      "bbox": [
+        748,
+        382,
+        46,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#B78A45",
+      "lineColor": "#B78A45",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65wjudg7",
+      "id": "23",
+      "name": "spine-center",
+      "bbox": [
+        723,
+        126,
+        2,
+        410
+      ],
+      "geometry": "rect",
+      "fillColor": "#F0E6DA",
+      "lineColor": "#F0E6DA",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hk3q5o7q",
+      "id": "24",
+      "name": "footer-left",
+      "bbox": [
+        72,
+        650,
+        230,
+        18
+      ],
+      "geometry": "rect",
+      "text": "ADMATE EXECUTIVE BRIEF",
+      "textPreview": "ADMATE EXECUTIVE BRIEF",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos Mono",
+        "color": "#AFA79C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ADMATE EXECUTIVE BRIEF"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ADMATE EXECUTIVE BRIEF",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos Mono",
+            "color": "#AFA79C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ADMATE EXECUTIVE BRIEF",
+              "fontSize": 12,
+              "typeface": "Aptos Mono",
+              "color": "#AFA79C"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oza1gvy9",
+      "id": "25",
+      "name": "footer-rule",
+      "bbox": [
+        1048,
+        655,
+        160,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#6F665B",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
