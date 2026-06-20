@@ -5,6 +5,28 @@ Gate: Creative-Studio-6
 상태: pre-production consistency audit
 범위: 문서 간 정합성 검토 only
 
+## 2026-06-08 Command Center Recheck
+
+이 감사 문서의 `Production Blockers`는 2026-05-07 기준의 historical
+blocker 목록이다. 2026-06-08 KST Command Center 재점검에서는 후속
+Gate Creative-Studio-8 aligned 문서들이 아래 정렬을 반영한 것으로
+확인했다.
+
+- `executive-5min-storyboard-v1.md`와 `planner-90s-storyboard-v1.md`는
+  현재 script, scene-shotlist, presenter scene map, scene-level dummy visual
+  spec, caption disclosure guide를 기준 문서로 참조한다.
+- Product/Core 장면은 presenter face time보다 product card, diagram,
+  sanitized mock 중심으로 정렬되어 있다.
+- Compass는 정책/가이드 근거 확인의 출발점, Sentinel은 세팅 검수와 운영
+  이상 감지 신호로 구분하는 handoff wording이 반영되어 있다.
+- `scene-level-dummy-visual-spec-v1.md`가 scene별 dummy visual, caption,
+  disclosure 입력 기준을 제공한다.
+
+현재 상태는 docs-only alignment recheck 통과이며, 이 결과는 media
+generation, mock frame generation, presenter test clip, TTS/lip-sync,
+image-to-video, external provider PoC, upload, publish, promotion, production
+use를 승인하지 않는다.
+
 ## Audit Boundary
 
 - 영상 생성, 이미지 생성, TTS, lip-sync, image-to-video, 외부 API 호출은 수행하지 않았다.

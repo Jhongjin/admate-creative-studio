@@ -6,12 +6,35 @@
 캐릭터: `lua` / `루아`, 20대 중후반 한국 여성형 AI virtual creator
 상태: Instagram launch production pack, documentation only
 
+## 2026-06-08 Positioning Correction
+
+루아는 AdMate 전용 presenter가 아니라 Instagram을 주요 활동 채널로 하는
+AI influencer / AI virtual creator다. YouTube도 같은 세계관과 톤을 공유할
+수 있다.
+
+채널의 기본 콘텐츠 축은 루아의 일상, 뷰티, 음식, office routine, 관심사,
+브랜드/서비스 소개 활동이다. 나스미디어 AdMate는 이 broader influencer
+활동 중 하나의 브랜드/서비스 소개 주제로 다룬다.
+
+따라서 이 문서의 AdMate 9-grid/office routine 구성은 루아 계정 전체의
+정체성이 아니라 `AdMate activity sub-pack`으로 해석한다. 실제 런칭 grid나
+채널 운영 캘린더에서는 lifestyle/beauty/food/office 콘텐츠와 AdMate 소개
+콘텐츠의 비율을 별도로 승인해야 한다.
+
+금지되는 포지셔닝:
+
+- 루아를 나스미디어 임직원, AdMate 운영자, 실제 고객, 실제 광고주 담당자,
+  실제 외부 인플루언서로 설정하는 것
+- AdMate가 루아 채널의 유일한 정체성인 것처럼 보이게 하는 것
+- 루아가 실제 사용 후기나 실제 캠페인 운영 경험을 증언하는 형식
+- AI disclosure 없이 실제 사람 인플루언서처럼 오인되게 하는 것
+
 ## 0. 작업 경계
 
 - 이 문서는 첫 Instagram launch 제작과 게시 준비를 위한 실행 패키지다.
 - 실제 계정 생성, 로그인, 2FA, 휴대폰 인증, profile 적용, 게시 클릭, 댓글/DM 대응, 광고/비즈니스 계정 연결은 사용자가 직접 수행한다.
 - `AI Influencer/` 원본 PNG는 read-only reference로만 사용한다. 수정, 이동, 삭제, 리네임, 압축, stage, commit하지 않는다.
-- 루아는 실제 인물, 임직원, 고객, 광고주 담당자, 외부 인플루언서가 아니다. AdMate를 설명하기 위해 생성형 AI로 제작한 virtual creator로만 다룬다.
+- 루아는 실제 인물, 임직원, 고객, 광고주 담당자, 실제 외부 인플루언서가 아니다. Instagram/YouTube에서 활동하는 AI influencer / AI virtual creator로 다룬다.
 - 모든 office, dashboard, product visual은 sanitized mock이다. 실제 사무실, 실제 내부 화면, 실제 캠페인, 실제 계정, 실제 고객 데이터는 사용하지 않는다.
 
 ## 1. 공통 제작 기준
@@ -20,9 +43,11 @@
 
 게시물별 caption 첫 2줄 안에 아래 중 하나를 넣는다.
 
-- `루아는 AdMate를 설명하기 위해 생성형 AI로 제작한 AI virtual creator입니다.`
+- `루아는 생성형 AI로 제작한 AI virtual influencer입니다.`
+- `루아는 실제 인물이 아닌 AI virtual creator입니다.`
 - `본 콘텐츠의 루아는 실제 인물 또는 임직원이 아닌 AI-generated virtual creator입니다.`
-- 짧은 영상 내 라벨: `AI-generated virtual creator`
+- AdMate 소개 콘텐츠 보조 고지: `이번 콘텐츠는 나스미디어 AdMate를 소개하는 AI virtual influencer 활동입니다.`
+- 짧은 영상 내 라벨: `AI-generated virtual influencer`
 
 Mock UI, dashboard, product card가 보이는 게시물에는 아래 고지를 caption 또는 이미지 하단 라벨에 추가한다.
 
@@ -39,10 +64,12 @@ Sentinel, Agent Core, 운영 흐름 게시물에는 아래 고지를 넣는다.
 
 ### 1.2 Hashtag Set
 
-기본 세트는 6개 이하로 제한한다.
+기본 세트는 6개 이하로 제한한다. 루아 채널 공통 hashtag와 AdMate
+activity hashtag를 분리한다.
 
-- Core: `#AdMate`, `#루아`, `#AIvirtualcreator`, `#광고운영`, `#AI에이전트`
-- Product optional: `#마케팅테크`, `#미디어플래닝`, `#업무자동화`
+- Lua channel core: `#루아`, `#AI인플루언서`, `#AIvirtualinfluencer`
+- Lifestyle optional: `#일상`, `#뷰티`, `#푸드`, `#오피스루틴`
+- AdMate activity optional: `#AdMate`, `#광고운영`, `#AI에이전트`, `#마케팅테크`, `#미디어플래닝`, `#업무자동화`
 - 금지: 성과 보장, 투자 수익, 특정 고객/매체/브랜드명을 직접 연상시키는 hashtag
 
 ### 1.3 Asset Reference Rule
@@ -90,12 +117,12 @@ Instagram profile grid는 최신 게시물이 좌상단에 배치된다. 아래 
 |---|---|
 | 실제 게시 순서 | 9번째, 최종 grid 1행 1열 |
 | Format | 4:5 feed 우선, 9:16 Reel cover도 동시 제작 |
-| 화면 구성 | 루아 정면 headshot. 밝은 generic office 또는 무표식 창가 배경. 상단 작은 라벨 `AI virtual creator`, 하단 `Lua by AdMate`. 얼굴은 중앙 상단 60% 안에 두고 텍스트는 얼굴/눈/입을 가리지 않는다. |
-| Caption 초안 | `안녕하세요, 루아입니다.\n저는 AdMate를 설명하기 위해 생성형 AI로 제작한 AI virtual creator예요. 실제 인물 또는 임직원이 아닙니다.\n\n앞으로 광고 운영의 반복 확인, 검수, 캡처, 학습 흐름을 차분하게 소개할게요. 최종 판단과 승인은 언제나 사람이 수행합니다.` |
+| 화면 구성 | 루아 정면 headshot. 밝은 generic office 또는 무표식 창가 배경. 상단 작은 라벨 `AI virtual influencer`, 하단 `Lua`. 얼굴은 중앙 상단 60% 안에 두고 텍스트는 얼굴/눈/입을 가리지 않는다. |
+| Caption 초안 | `안녕하세요, 루아입니다.\n저는 생성형 AI로 제작한 AI virtual influencer예요. 실제 인물 또는 임직원이 아닙니다.\n\n일상, 뷰티, 음식, 오피스 루틴, 그리고 흥미로운 브랜드와 서비스를 제 시선으로 소개할게요. AdMate 이야기도 그 활동 중 하나로 차분하게 다룹니다.` |
 | Alt text | `밝은 사무실 분위기에서 아이보리 셔츠를 입은 루아 AI virtual creator가 정면을 바라보는 프로필 이미지. 실제 인물이 아닌 생성형 AI 캐릭터임을 알리는 문구가 함께 배치되어 있다.` |
-| Disclosure | Caption 2번째 줄에 AI virtual creator 고지. 이미지 상단에 `AI virtual creator`. |
+| Disclosure | Caption 2번째 줄에 AI virtual influencer 고지. 이미지 상단에 `AI virtual influencer`. |
 | CTA | `먼저 궁금한 AdMate 흐름을 댓글로 남겨주세요.` |
-| Hashtag | `#AdMate #루아 #AIvirtualcreator #광고운영 #AI에이전트` |
+| Hashtag | `#루아 #AI인플루언서 #AIvirtualinfluencer #일상 #오피스루틴` |
 | 기존 파일 후보 | `lua_brand_safe_profile_v1_ivory_shirt.png`, `lua_master_face_v1.png`, `lua_smile_v1_soft_window_blouse.png` |
 | 필요한 asset/부족컷 | 공식 profile headshot 1:1, 4:5, 9:16 cover crop. Generic office 배경 재제작 필요. |
 
@@ -106,7 +133,7 @@ Instagram profile grid는 최신 게시물이 좌상단에 배치된다. 아래 
 | 실제 게시 순서 | 8번째, 최종 grid 1행 2열 |
 | Format | Carousel 6장 |
 | 화면 구성 | Slide 1: AdMate overview title card. Slide 2: 반복 확인 업무 card. Slide 3: 판단 근거 card. Slide 4: Compass/Sentinel/Lens/Foresight product cards. Slide 5: Agent Core loop. Slide 6: AI virtual creator 및 mock visual disclosure. |
-| Caption 초안 | `AdMate는 광고 운영의 반복 업무를 AI Agent 흐름으로 정리하는 플랫폼입니다.\n루아는 이를 설명하기 위한 AI virtual creator이며, 화면은 비식별 mock visual입니다.\n\n기획, 운영, 검수, 캡처, 학습까지 이어지는 흐름을 하나씩 풀어볼게요. AdMate는 사람의 판단을 대체하지 않고, 판단에 필요한 근거를 더 잘 남기도록 돕습니다.` |
+| Caption 초안 | `오늘 루아의 오피스 관심사: 나스미디어 AdMate.\n루아는 생성형 AI로 제작한 AI virtual influencer이며, 화면은 비식별 mock visual입니다.\n\nAdMate는 기획, 운영, 검수, 캡처, 학습까지 이어지는 광고 운영 흐름을 AI Agent 관점으로 정리하는 플랫폼입니다. 사람의 판단을 대체하기보다, 판단에 필요한 근거를 더 잘 남기도록 돕습니다.` |
 | Alt text | `AdMate의 광고 운영 흐름을 소개하는 6장짜리 carousel. Compass, Sentinel, Lens, Foresight, Agent Core가 각각 카드 형태로 표시되어 있고 실제 데이터가 아닌 mock visual이라고 설명한다.` |
 | Disclosure | Slide 6와 caption 첫 문단에 AI virtual creator, sanitized mock visual 고지. |
 | CTA | `광고 운영에서 가장 자주 반복되는 확인 업무는 무엇인가요?` |
@@ -120,9 +147,9 @@ Instagram profile grid는 최신 게시물이 좌상단에 배치된다. 아래 
 |---|---|
 | 실제 게시 순서 | 7번째, 최종 grid 1행 3열 |
 | Format | 4:5 feed 또는 3-slide carousel |
-| 화면 구성 | 정적인 disclosure card. 배경은 ivory/white, charcoal text, 작은 Lua profile icon. 핵심 문장 `루아는 실제 인물이 아닙니다`. 보조 문장 `AI-generated virtual creator for AdMate`. |
-| Caption 초안 | `루아는 실제 인물이 아닙니다.\nAdMate를 설명하기 위해 생성형 AI로 제작한 AI virtual creator입니다.\n\n실제 임직원, 고객, 광고주 담당자, 외부 인플루언서를 나타내지 않습니다. 공개 콘텐츠에는 실제 내부 화면이나 고객 데이터를 사용하지 않고, 필요한 경우 sanitized mock visual만 사용합니다.` |
-| Alt text | `루아가 실제 인물이 아니라 생성형 AI로 제작한 가상 캐릭터임을 설명하는 단순한 안내 카드. AdMate 설명용 AI virtual creator라는 문구가 보인다.` |
+| 화면 구성 | 정적인 disclosure card. 배경은 ivory/white, charcoal text, 작은 Lua profile icon. 핵심 문장 `루아는 실제 인물이 아닙니다`. 보조 문장 `AI-generated virtual influencer`. |
+| Caption 초안 | `루아는 실제 인물이 아닙니다.\n생성형 AI로 제작한 AI virtual influencer입니다.\n\n실제 임직원, 고객, 광고주 담당자, 실제 외부 인플루언서를 나타내지 않습니다. 공개 콘텐츠에는 실제 내부 화면이나 고객 데이터를 사용하지 않고, 필요한 경우 sanitized mock visual만 사용합니다.` |
+| Alt text | `루아가 실제 인물이 아니라 생성형 AI로 제작한 AI virtual influencer임을 설명하는 단순한 안내 카드.` |
 | Disclosure | 게시물 자체가 disclosure. Caption 첫 2줄에 명시. |
 | CTA | `이 계정에서는 투명하게 고지하고, 승인된 mock visual만 사용합니다.` |
 | Hashtag | `#AdMate #루아 #AIvirtualcreator #AI투명성 #광고운영` |

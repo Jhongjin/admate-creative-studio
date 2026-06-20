@@ -18,6 +18,37 @@ Gate: Creative-Studio-8
 
 필수 guard는 presenter, mock, performance, human approval 네 범주로 관리한다.
 
+### Lua AI Influencer
+
+Instagram/YouTube의 루아 채널에서는 루아를 AdMate 전용 presenter가 아니라
+AI influencer / AI virtual creator로 고지한다. AdMate는 루아의 broader
+channel activity 중 하나의 브랜드/서비스 소개 주제로 다룬다.
+
+기본 고지:
+
+`루아는 생성형 AI로 제작한 AI virtual influencer입니다. 실제 인물 또는 임직원이 아닙니다.`
+
+일반 소개/일상 콘텐츠 운영 기준:
+
+- 프로필 bio, category, AI Creator/profile label에 루아의 AI 정체성과
+  `실제 인물이 아닙니다` 고지가 유지되어 있으면, 일반 intro/lifestyle
+  이미지마다 같은 AI 고지를 반복하지 않아도 된다.
+- 이 기준은 루아의 일상, 뷰티, 음식, 오피스 루틴처럼 브랜드/광고 고지
+  대상이 아닌 자연스러운 채널 콘텐츠에 적용한다.
+- 루아가 실제 사람, 실제 임직원, 실제 방문자처럼 보이도록 의도적으로
+  숨기거나 오인시키는 표현은 사용하지 않는다.
+- AdMate, Nasmedia, 외부 브랜드/서비스 소개, 광고/협찬성 콘텐츠, 실제
+  사무실/방문처럼 보이는 장면, 제품 추천/성과 주장에는 caption 또는
+  description에서 짧고 명확한 AI/activity disclosure를 다시 넣는다.
+
+AdMate 소개 콘텐츠 보조 고지:
+
+`이번 콘텐츠는 나스미디어 AdMate를 소개하는 AI virtual influencer 활동입니다.`
+
+짧은 caption:
+
+`AI-generated virtual influencer`
+
 ### Virtual Presenter
 
 내부 임원 보고용:

@@ -8,6 +8,32 @@
 
 AdMate presenter는 실제 인물 imitation이 아니라 AdMate 설명을 위한 가상 브랜드 캐릭터다. presenter는 실제 직원, 임원, 고객, 광고주 담당자, 외부 인플루언서로 설정하지 않는다.
 
+## 2026-06-08 Lua Influencer Mode
+
+루아는 AdMate 전용 presenter가 아니라 Instagram 중심으로 활동하는 AI
+influencer / AI virtual creator 모드로도 운영될 수 있다. YouTube도 같은
+컨셉을 공유할 수 있다.
+
+Lua influencer mode에서 허용되는 큰 콘텐츠 축:
+
+- 일상,
+- 뷰티,
+- 음식,
+- office routine,
+- 관심사와 브랜드/서비스 소개 활동.
+
+Nasmedia AdMate는 루아의 broader channel activity 중 하나의 브랜드/서비스
+소개 콘텐츠로 다룬다. AdMate 콘텐츠에서도 루아를 실제 임직원, AdMate
+운영자, 실제 고객, 광고주 담당자, 실제 외부 인플루언서로 설정하지 않는다.
+
+Lua influencer mode는 아래를 승인하지 않는다:
+
+- 실제 사람 인플루언서처럼 오인되는 운영,
+- 실제 사용 후기나 실제 캠페인 경험 증언,
+- AI disclosure 없는 게시,
+- 계정 로그인, 업로드, 게시, 댓글/DM 대응 자동화,
+- media generation/provider upload/publish without separate approval.
+
 ## 사용 가능 범위
 
 | 범위 | 허용 여부 | 조건 |
@@ -58,6 +84,10 @@ AdMate presenter는 실제 인물 imitation이 아니라 AdMate 설명을 위한
 권장 문구:
 
 `본 콘텐츠의 presenter는 AdMate 설명을 위해 생성형 AI로 제작한 가상 캐릭터입니다. 실제 인물 또는 임직원을 나타내지 않습니다.`
+
+Lua influencer mode 권장 문구:
+
+`루아는 생성형 AI로 제작한 AI virtual influencer이며 실제 인물 또는 임직원을 나타내지 않습니다.`
 
 ## 금지 역할 설정
 

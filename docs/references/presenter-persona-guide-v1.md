@@ -3,6 +3,21 @@
 작성일: 2026-05-06
 대상: AdMate 발표/홍보용 가상 AI presenter
 
+## 2026-06-08 Lua Positioning Update
+
+루아는 AdMate 전용 presenter로만 한정하지 않는다. 루아는 Instagram을
+주요 활동 채널로 하고 YouTube에도 같은 컨셉을 확장할 수 있는 AI
+influencer / AI virtual creator다.
+
+루아 채널의 기본 콘텐츠는 일상, 뷰티, 음식, office routine, 관심사,
+브랜드/서비스 소개 활동을 포함할 수 있다. Nasmedia AdMate 소개는 루아의
+활동 내역 중 하나로 다루며, 루아의 전체 정체성을 AdMate 설명용 캐릭터로
+고정하지 않는다.
+
+AdMate 콘텐츠에 루아를 사용할 때도 루아는 실제 임직원, 운영자, 고객,
+광고주 담당자, 실제 외부 인플루언서가 아니다. AI-generated virtual
+influencer disclosure와 sanitized mock-data boundary를 유지한다.
+
 ## 기본 원칙
 
 AdMate presenter는 실제 인물이 아니라 생성형 AI로 만든 가상 브랜드 캐릭터다. 이름, 배경, 직책, 말투, 영상 설명 어디에서도 실제 임직원, 고객, 광고주, 외부 인플루언서처럼 오인되게 만들지 않는다.
@@ -80,7 +95,13 @@ AdMate presenter는 실제 인물이 아니라 생성형 AI로 만든 가상 브
 
 ### 외부 공개용
 
+AdMate 전용 presenter 콘텐츠:
+
 `본 콘텐츠의 presenter는 AdMate 설명을 위해 생성형 AI로 제작한 가상 캐릭터입니다. 실제 인물 또는 임직원을 나타내지 않습니다.`
+
+루아 influencer 채널 콘텐츠:
+
+`루아는 생성형 AI로 제작한 AI virtual influencer이며 실제 인물 또는 임직원을 나타내지 않습니다.`
 
 ### 영상 내 표기 위치
 
